@@ -1,0 +1,15 @@
+.navbar {
+  z-index: 999;
+}
+.carousel {
+margin-top: -80px;
+}
+body{
+  background-color: black;
+}
+footer{
+margin-bottom: -80px;
+}
+footer ul li{
+  display: inline-block;
+}
