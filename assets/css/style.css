@@ -7,9 +7,18 @@ margin-top: -80px;
 body{
   background-color: black;
 }
+.nav-item{
+  text-align: right;
+}
 footer{
 margin-bottom: -80px;
 }
 footer ul li{
   display: inline-block;
+}
+footer a {
+  color: white;
+}
+.cabecera{
+  padding: 50px 0px 50px 0px;
 }

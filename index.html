@@ -4,7 +4,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS 5.0.1-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -19,7 +19,6 @@
 
 </head>
 <body>
-
 <!-- navbar  -->
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark  px-4">
     <a class="navbar-brand" href="#">
@@ -31,11 +30,11 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto text-right">
-                <a class="nav-item nav-link active" href="#">Inicio <span class="sr-only"></span></a>
-                <a class="nav-item nav-link" href="#">Quienes somos</a>
-                <a class="nav-item nav-link" href="#">Destacado</a>
-                <a class="nav-item nav-link" href="#">Contacto</a>
+            <div class="navbar-nav ml-auto ">
+                <a class="nav-item nav-link active" href="index.html">Inicio <span class="sr-only"></span></a>
+                <a class="nav-item nav-link" href="index.html#quienes-somos">Quienes somos</a>
+                <a class="nav-item nav-link" href="index.html#destacados">Destacado</a>
+                <a class="nav-item nav-link" href="index.html#formulario">Contacto</a>
             </div>
         </div>
     </nav>
@@ -66,8 +65,10 @@
   </header>
 
 <!-- SECCION PRINCIPAL -->
-  <section class="section_quienes-somos  text-white">
-    <h3 class="text-center border-white border-bottom">¿Quienes somos?</h3>
+  <section class="section_quienes-somos  text-white" id="quienes-somos">
+    <div class="cabecera">
+      <h3 class="text-center border-white border-bottom">¿Quienes somos?</h3>
+    </div>
       <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 seccion_descrip">
             <h4 class="py-4 text-center bg-primary text-white"><i class="fas fa-plane"></i></h4>
@@ -97,12 +98,14 @@
         </section>
 
 <!-- TARJETAS -->
-<section class="seccion_destacados py-3 my-3 text-white ">
+<section class="seccion_destacados py-3 my-3 text-white" id="destacados">
+  <div class="cabecera">
         <h2 class="text-center border-dark border-bottom">Destacados</h2>
+  </div>
         <div class="row">
             <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 my-3">
                 <div class="card bg-primary">
-                    <img src="assets/img/card1.jpg" class="card-img-top" alt="recipe-card-1">
+                    <img src="assets/img/card1.jpg" class="card-img-top" width="400" height="266" alt="recipe-card-3">
                     <div class="card-body">
                     <h5 class="card-title">tarjeta 1</h5>
                     <p class="card-text">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.</p>
@@ -111,7 +114,7 @@
             </article>
             <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 my-3">
                 <div class="card bg-primary">
-                    <img src="assets/img/card2.jpg" class="card-img-top" alt="recipe-card-2">
+                    <img src="assets/img/card2.jpg" class="card-img-top" width="400" height="266" alt="recipe-card-3">
                     <div class="card-body">
                     <h5 class="card-title">tarjeta 2</h5>
                     <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
@@ -120,7 +123,7 @@
             </article>
             <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 my-3">
                 <div class="card bg-primary">
-                    <img src="assets/img/card3.jpg" class="card-img-top" alt="recipe-card-3">
+                    <img src="assets/img/card3.jpg" class="card-img-top" width="400" height="266" alt="recipe-card-3">
                     <div class="card-body">
                     <h5 class="card-title">tarjeta 3</h5>
                     <p class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
@@ -129,7 +132,7 @@
             </article>
             <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 my-3">
                 <div class="card bg-primary">
-                    <img src="assets/img/card4.jpg" class="card-img-top" alt="recipe-card-3">
+                    <img src="assets/img/card4.jpg" class="card-img-top" width="400" height="266" alt="recipe-card-3">
                     <div class="card-body">
                     <h5 class="card-title">tarjeta 4</h5>
                     <p class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
@@ -140,11 +143,13 @@
     </section>
 
 <!-- FORMULARIO -->
-<section>
-  <h2 class="text-center border-white border-bottom text-white">Contacto</h2>
-  <div class="FORMULARIO">
-    <div class="typeform-widget" data-url="https://form.typeform.com/to/BiQladoV?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div>
-     <script>
+  <section id="formulario">
+    <div class="cabecera">
+      <h2 class="text-center border-white border-bottom text-white">Contacto</h2>
+    </div>
+    <div class="FORMULARIO">
+      <div class="typeform-widget" data-url="https://form.typeform.com/to/BiQladoV?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div>
+      <script>
         (function() {
            var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/";
             if(!gi.call(d,id)) { js=ce.call(d,"script");
@@ -153,8 +158,8 @@
         q.parentNode.insertBefore(js,q)
       } })()
       </script>
-  </div>
-</section>
+    </div>
+  </section>
 
 <!--FOOTER-->
   <footer class="bg-primary p-3 text-center">
@@ -165,21 +170,18 @@
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-white">
         <ul>
           <li></li>
-          <li><i class="fab fa-linkedin"></i></li>
-          <li><i class="fab fa-facebook-square"></i></li>
-          <li><i class="fab fa-twitter-square"></i></li>
+          <li><a href="https://www.linkedin.com/home"><h4><i class="fab fa-linkedin"></i></h4></a></li>
+          <li><a href="https://www.facebook.com/"><h4><i class="fab fa-facebook-square"></i></h4></a></li>
+          <li><a href="https://twitter.com/?lang=es"><h4><i class="fab fa-twitter-square"></i></h4></a></li>
         </ul>
-
       </div>
     </div>
-
-    </footer>
-
+  </footer>
 
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 
 <!-- Javascript -->
 
