@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <!-- Required meta tags -->
@@ -9,7 +9,8 @@
   <!-- font awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <!-- Google fonts -->
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <!-- Css style -->
       <link rel="stylesheet" href="./assets/css/style.css">
   <!-- JQuery -->
@@ -20,24 +21,25 @@
 </head>
 <body>
 <!-- navbar  -->
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark  px-4">
-    <a class="navbar-brand" href="#">
-      <img src="assets/img/viajes.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-      Viajes Chile
-    </a>
-        <button class="navbar-toggler boton" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto text-right">
-                <a class="nav-item nav-link active" href="index.html">Inicio <span class="sr-only"></span></a>
-                <a class="nav-item nav-link" href="index.html#quienes-somos">Quienes somos</a>
-                <a class="nav-item nav-link" href="index.html#destacados">Destacado</a>
-                <a class="nav-item nav-link" href="index.html#formulario">Contacto</a>
-            </div>
-        </div>
-    </nav>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark px-4">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+     <a class="navbar-brand text-left" href="#">
+       <img src="assets/img/viajes.svg" alt="" class="logo">  Viajes Chile </a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+   </div>
+   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-right">
+     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+       <div class="navbar-nav">
+         <a class="nav-item nav-link active" href="index.html">Inicio <span class="sr-only"></span></a>
+         <a class="nav-item nav-link" href="index.html#quienes-somos">Quienes somos</a>
+         <a class="nav-item nav-link" href="index.html#destacados">Destacado</a>
+         <a class="nav-item nav-link" href="index.html#formulario" tabindex="-1" aria-disabled="true">Contacto</a>
+       </div>
+     </div>
+   </div>
+   </nav>
 <!-- HEADER-->
   <header>
 <!-- CARRUSEL -->
@@ -67,7 +69,7 @@
 <!-- SECCION PRINCIPAL -->
   <section class="section_quienes-somos  text-white" id="quienes-somos">
     <div class="cabecera">
-      <h3 class="text-center border-white border-bottom">¿Quienes somos?</h3>
+      <h3 class="text-center border-primary border-bottom">¿Quienes somos?</h3>
     </div>
       <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 seccion_descrip">
@@ -100,7 +102,7 @@
 <!-- TARJETAS -->
 <section class="seccion_destacados py-3 my-3 text-white" id="destacados">
   <div class="cabecera">
-        <h2 class="text-center border-dark border-bottom">Destacados</h2>
+        <h2 class="text-center border-primary border-bottom">Destacados</h2>
   </div>
         <div class="row">
             <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 my-3">
@@ -145,7 +147,7 @@
 <!-- FORMULARIO -->
   <section id="formulario">
     <div class="cabecera">
-      <h2 class="text-center border-white border-bottom text-white">Contacto</h2>
+      <h2 class="text-center border-primary border-bottom text-white">Contacto</h2>
     </div>
     <div class="FORMULARIO">
       <div class="typeform-widget" data-url="https://form.typeform.com/to/BiQladoV?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div>
